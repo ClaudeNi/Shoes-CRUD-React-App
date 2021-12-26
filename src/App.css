@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+body {
+    background: #333;
+}
+
+.App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list {
+    padding: 1rem;
+    width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.list-item {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.list-item:hover {
+    background: #ccc;
+}
+
+.list-item:hover > .list-item-left > div > div > span {
+    color: #000;
+}
+
+.list-item-left,
+.item {
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list-item-left input.checkbox {
+    height: 30px;
+    width: 30px;
+    margin: 0 1rem 0 0;
+    cursor: pointer;
+}
+
+.list-item-left input.edit-box {
+    color: #000;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 90%;
+}
+
+.list-item-right {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.done {
+    text-decoration: line-through #ff0000 solid;
+}
+
+.btn {
+    cursor: pointer;
+    background: cornflowerblue;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0 0.5rem;
+}
+
+.item img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.item .item-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
